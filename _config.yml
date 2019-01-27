@@ -1,6 +1,6 @@
 name: Code for Beijing Legal Hackers
 url: https://legalhackersbeijing.github.io
-baseurl: beijinglegalhackers
+baseurl: /beijinglegalhackers
 markdown: kramdown
 highlighter: rouge
 paginate: 10
