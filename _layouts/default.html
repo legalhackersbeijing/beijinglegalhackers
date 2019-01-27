@@ -61,11 +61,11 @@
     {% endif %}
 
     <!-- CSS -->
-    <link href="{{ site.url }}/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ site.url }}/assets/css/style.css" rel="stylesheet">
-    <link href="{{ site.url }}/assets/css/syntax.css" rel="stylesheet">
-    <link href="{{ site.url }}/assets/css/font-awesome.min.css" rel="stylesheet">
-    {% for css_name in page.extra_css %}<link rel="stylesheet" href="{{ site.url }}/assets/css/{{ css_name }}">{% endfor %}
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/assets/css/syntax.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    {% for css_name in page.extra_css %}<link rel="stylesheet" href="/assets/css/{{ css_name }}">{% endfor %}
 
     <!-- RSS Feed -->
     <link rel="alternate" href="{{ site.url }}/rss.xml" type="application/rss+xml" title="Code for DC Blog" />
