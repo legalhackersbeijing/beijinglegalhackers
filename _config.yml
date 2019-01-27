@@ -1,5 +1,5 @@
-name: Code for DC
-url: https://legalhackersbeijing.github.io/beijinglegalhackers
+name: Code for Beijing Legal Hackers
+url: https://legalhackersbeijing.github.io
 markdown: kramdown
 highlighter: rouge
 paginate: 10
