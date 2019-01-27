@@ -1,17 +1,5 @@
 <!DOCTYPE html>
-<!--
-=============================================================================================================
-=============================================================================================================
- ________  ________  ________  _______           ________ ________  ________          ________  ________
-|\   ____\|\   __  \|\   ___ \|\  ___ \         |\  _____\\   __  \|\   __  \        |\   ___ \|\   ____\
-\ \  \___|\ \  \|\  \ \  \_|\ \ \   __/|        \ \  \__/\ \  \|\  \ \  \|\  \       \ \  \_|\ \ \  \___|
- \ \  \    \ \  \\\  \ \  \ \\ \ \  \_|/__       \ \   __\\ \  \\\  \ \   _  _\       \ \  \ \\ \ \  \
-  \ \  \____\ \  \\\  \ \  \_\\ \ \  \_|\ \       \ \  \_| \ \  \\\  \ \  \\  \|       \ \  \_\\ \ \  \____
-   \ \_______\ \_______\ \_______\ \_______\       \ \__\   \ \_______\ \__\\ _\        \ \_______\ \_______\
-    \|_______|\|_______|\|_______|\|_______|        \|__|    \|_______|\|__|\|__|        \|_______|\|_______|
-=============================================================================================================
-=============================================================================================================
--->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -22,7 +10,7 @@
     {% else %}
     <meta name="author" content="" />
     {% endif %}
-    <link rel="shortcut icon" href="{{ site.url }}/images/favicon.ico" />
+    <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.ico" />
 
     <!-- Twitter and OpenGraph tags -->
     <meta name="twitter:creator" content="@codefordc" />
@@ -30,7 +18,7 @@
     <meta name="twitter:site" content="@codefordc" />
     <meta name="twitter:site:id" content="2449810405" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{ site.url }}" />
+    <meta property="og:url" content="{{ site.baseurl }}" />
 
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
@@ -47,9 +35,9 @@
     <meta property="og:description" content="{{ page.description }}" />
     <meta name="twitter:description" content="{{ page.description }}" />
     {% else %}
-    <meta name="description" content="Code for DC is the DC chapter of the Code for America Brigade. We are a group of volunteer civic hackers working together to solve local issues and help people engage with the city." />
-    <meta property="og:description" content="Code for DC is the DC chapter of the Code for America Brigade. We are a group of volunteer civic hackers working together to solve local issues and help people engage with the city." />
-    <meta name="twitter:description" content="Code for DC is the DC chapter of the Code for America Brigade. We are a group of volunteer civic hackers working together to solve local issues and help people engage with the city." />
+    <meta name="description" content="Code for Legal Hackers Beijing chapter. We are group of volunteer civic hackers working to bridge legal practitioners and state of the art engineers." />
+    <meta property="og:description" content="Code for Legal Hackers Beijing chapter. We are group of volunteer civic hackers working to bridge legal practitioners and state of the art engineers." />
+    <meta name="twitter:description" content="Code for Legal Hackers Beijing chapter. We are group of volunteer civic hackers working to bridge legal practitioners and state of the art engineers." />
     {% endif %}
 
     {% if page.image %}
@@ -57,7 +45,7 @@
     <meta property="og:image" content="{{ site.url }}/images/{{ page.image }}" />
     {% else %}
     <meta name="twitter:card" content="summary" />
-    <meta property="og:image" content="{{ site.url }}/images/logo_500px.png" />
+    <meta property="og:image" content="{{ site.baseurl }}/images/logo_500px.png" />
     {% endif %}
 
     <!-- CSS -->
@@ -66,10 +54,10 @@
     <link href="{{ site.baseurl }}/assets/css/style.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/syntax.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/assets/css/font-awesome.min.css" rel="stylesheet">
-    {% for css_name in page.extra_css %}<link rel="stylesheet" href="/assets/css/{{ css_name }}">{% endfor %}
+    {% for css_name in page.extra_css %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ css_name }}">{% endfor %}
 
     <!-- RSS Feed -->
-    <link rel="alternate" href="{{ site.url }}/rss.xml" type="application/rss+xml" title="Code for DC Blog" />
+    <link rel="alternate" href="{{ site.baseurl }}/rss.xml" type="application/rss+xml" title="Code for DC Blog" />
 
     {% if page.is_post %}
     {% capture read_time %}{{ page.content | number_of_words | divided_by: 180 }}{% endcapture %}
